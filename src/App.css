@@ -1,0 +1,85 @@
+/* Base Styles */
+:root {
+  --primary: #7140c7;
+  --secondary: #3a0ca3;
+  --text: #621ca3;
+  --background: #000000;
+  --accent: #f72585;
+  --base-color: #4361ee;
+}
+
+/* Light/Dark Mode Variables */
+.light-mode {
+  --primary: var(--primary);
+  --secondary: var(--secondary);
+  --text: #1a1a2e;
+  --background: #ffffff;
+  --accent: var(--accent);
+}
+
+.dark-mode {
+  --primary: #ffffff;
+  --secondary: #4895ef;
+  --text: #f8f9fa;
+  --background: #121212;
+  --accent: #f72585;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  background-color: var(--base-color);
+  color: white;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+input, textarea, select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--base-color);
+  background-color: var(--background);
+  color: var(--text);
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--accent);
+  outline: none;
+}

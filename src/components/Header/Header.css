@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary); /* Dynamic base color */
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.logo p {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.theme-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.base-color-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.base-color-picker label {
+  font-size: 0.9rem;
+  color: var(--base-color);
+}
+
+.base-color-picker input {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
