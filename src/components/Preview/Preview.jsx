@@ -16,10 +16,13 @@ const Preview = ({ userData }) => {
     }
   }, [mode, colorScheme, baseColor]);
 
-  const previewClasses = `preview-container ${mode}-mode ${colorScheme}-scheme`;
-
   return (
     <div className="preview-wrapper">
+      {/* Floating Elements */}
+      <div className="floating-element"></div>
+      <div className="floating-element"></div>
+      <div className="floating-element"></div>
+
       <div className="preview-controls">
         <h2>Live Preview</h2>
         <div className="theme-controls">
@@ -38,7 +41,7 @@ const Preview = ({ userData }) => {
         </div>
       </div>
 
-      <div className={previewClasses}>
+      <div className={`preview-container ${mode}-mode ${colorScheme}-scheme`}>
         <header className="preview-header">
           <h1>{userData.name || 'Your Name'}</h1>
           <h2>{userData.title || 'Your Professional Title'}</h2>

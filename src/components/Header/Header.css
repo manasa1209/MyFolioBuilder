@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -7,12 +9,21 @@
   color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
+  
+  
 }
 
 .logo h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: white;
+  font-family: 'Bebas Neue';
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .logo p {
